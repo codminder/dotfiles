@@ -24,6 +24,7 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+
 let g:airline_powerline_fonts = 1
 
 " Start of COC configuration
