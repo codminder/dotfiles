@@ -7,6 +7,7 @@ set cursorline cursorcolumn
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType html       setlocal shiftwidth=2 tabstop=2
 autocmd FileType python     setlocal shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType css	    setlocal shiftwidth=2 tabstop=2	
 
 " Automatically start NERDTree when Vim starts
 autocmd VimEnter * NERDTree
