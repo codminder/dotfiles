@@ -1,8 +1,6 @@
 set encoding=utf8
 set rnu
-<<<<<<< HEAD
 
-=======
 set cursorline cursorcolumn
 
 " Indentation with tab for different fyle types
