@@ -1,6 +1,10 @@
 set encoding=utf8
 set rnu
+<<<<<<< HEAD
 
+=======
+set cursorline cursorcolumn
+>>>>>>> 2473484 (vimrc changed)
 " Indentation with tab for different fyle types
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType html       setlocal shiftwidth=2 tabstop=2
@@ -27,6 +31,7 @@ map <C-l> <C-W>l
 
 let g:airline_powerline_fonts = 1
 
+<<<<<<< HEAD
 " Start of COC configuration
 
 set nobackup
@@ -185,6 +190,15 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " End of COC configuration
+=======
+" Emmet enable only for html/css
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
+" CoC suggestion mappings
+inoremap <silent><expr> <tab> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<TAB>"
+inoremap <silent><expr> <cr> "\<c-g>u\<CR>"
+>>>>>>> 2473484 (vimrc changed)
 
 call plug#begin()
 " The default plugin directory will be as follows:
@@ -213,6 +227,10 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-dispatch'
 Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.7' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2473484 (vimrc changed)
 " Call plug#end to update &runtimepath and initialize the plugin system.
 " - It automatically executes `filetype plugin indent on` and `syntax enable`
 call plug#end()
