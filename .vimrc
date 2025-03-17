@@ -8,6 +8,7 @@ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType html       setlocal shiftwidth=2 tabstop=2
 autocmd FileType python     setlocal shiftwidth=4 softtabstop=4 expandtab
 
+some test text
 
 " Automatically start NERDTree when Vim starts
 autocmd VimEnter * NERDTree
