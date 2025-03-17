@@ -3,10 +3,7 @@
 #
 
 # If not running interactively, don't do anything
-<<<<<<< HEAD
-=======
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
->>>>>>> 2473484 (vimrc changed)
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
