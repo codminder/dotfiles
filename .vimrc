@@ -223,6 +223,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-dispatch'
 Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.7' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'KabbAmine/vCoolor.vim'
 
 " Call plug#end to update &runtimepath and initialize the plugin system.
 " - It automatically executes `filetype plugin indent on` and `syntax enable`
