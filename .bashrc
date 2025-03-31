@@ -9,8 +9,8 @@ export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
 alias dotfiles=/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME
 
 alias la='ls -la'
 alias ll='ls -ll'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
