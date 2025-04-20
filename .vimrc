@@ -1,8 +1,8 @@
 set encoding=utf8
 set rnu
-
 set cursorline cursorcolumn
-
+set list
+set lcs+=space:·
 " Indentation with tab for different fyle types
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType html       setlocal shiftwidth=2 tabstop=2
