@@ -1,13 +1,14 @@
 set encoding=utf8
 set rnu
 set cursorline cursorcolumn
-set list
-set lcs+=space:·
 " Indentation with tab for different fyle types
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType html       setlocal shiftwidth=2 tabstop=2
 autocmd FileType python     setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType css	    setlocal shiftwidth=2 tabstop=2	
+
+" eneble indentetion of guidelines on startup
+let g:indent_guides_enable_on_vim_startup = 1
 
 " Automatically start NERDTree when Vim starts
 autocmd VimEnter * NERDTree
@@ -224,7 +225,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.7' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'KabbAmine/vCoolor.vim'
-
+Plug 'nathanaelkane/vim-indent-guides'
 " Call plug#end to update &runtimepath and initialize the plugin system.
 " - It automatically executes `filetype plugin indent on` and `syntax enable`
 call plug#end()
