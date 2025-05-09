@@ -1,5 +1,5 @@
 set encoding=utf8
-set rnu
+set rnu nu
 set cursorline cursorcolumn
 " Indentation with tab for different fyle types
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
@@ -30,6 +30,7 @@ map <C-l> <C-W>l
 
 let g:airline_powerline_fonts = 1
 
+let g:auto_save = 1
 " Start of COC configuration
 
 set nobackup
@@ -226,6 +227,7 @@ Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.7' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'KabbAmine/vCoolor.vim'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug '907th/vim-auto-save'
 " Call plug#end to update &runtimepath and initialize the plugin system.
 " - It automatically executes `filetype plugin indent on` and `syntax enable`
 call plug#end()
