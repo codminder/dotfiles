@@ -9,7 +9,13 @@ autocmd FileType css	    setlocal shiftwidth=2 tabstop=2
 
 " eneble indentetion of guidelines on startup
 let g:indent_guides_enable_on_vim_startup = 1
+
+" vimspector config
 let g:vimspector_base_dir='/home/fasturtle/.vim/plugged/vimspector'
+let g:vimspector_enable_mappings = 'HUMAN'
+
+" Ale config
+
 
 " Automatically start NERDTree when Vim starts
 autocmd VimEnter * NERDTree
@@ -20,14 +26,19 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 " Close the tab if NERDTree is the only window remaining in it.
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(":quit\<CR>:\<BS>") | endif
 
+
+
 " Vim easy navigation between panes
-
-
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 nmap <F5> <Plug>VimspectorContinue
+
+" Fuzzy finder mappings
+
+map <C-p> :GFiles<CR>
+map <C-f> :Files<CR>
 
 let g:airline_powerline_fonts = 1
 
@@ -230,9 +241,17 @@ Plug 'KabbAmine/vCoolor.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug '907th/vim-auto-save'
 Plug 'puremourning/vimspector'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'Valloric/MatchTagAlways'
+Plug 'dense-analysis/ale'
+
 " Call plug#end to update &runtimepath and initialize the plugin system.
 " - It automatically executes `filetype plugin indent on` and `syntax enable`
 call plug#end()
+
+
+let g:ale_liters = {'cs':['OmniSharp']}
+
 " You can revert the settings after the call like so:
 "   filetype indent off   " Disable file-type-specific indentation
 "   syntax off            " Disable syntax highlighting
