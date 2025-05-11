@@ -9,6 +9,7 @@ autocmd FileType css	    setlocal shiftwidth=2 tabstop=2
 
 " eneble indentetion of guidelines on startup
 let g:indent_guides_enable_on_vim_startup = 1
+let g:vimspector_base_dir='/home/fasturtle/.vim/plugged/vimspector'
 
 " Automatically start NERDTree when Vim starts
 autocmd VimEnter * NERDTree
@@ -26,7 +27,7 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-
+nmap <F5> <Plug>VimspectorContinue
 
 let g:airline_powerline_fonts = 1
 
@@ -228,6 +229,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'KabbAmine/vCoolor.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug '907th/vim-auto-save'
+Plug 'puremourning/vimspector'
 " Call plug#end to update &runtimepath and initialize the plugin system.
 " - It automatically executes `filetype plugin indent on` and `syntax enable`
 call plug#end()
