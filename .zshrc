@@ -4,7 +4,7 @@ source .bashrc
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-eval $(keychain --eval --agents ssh id_rsa)
+eval $(keychain --agent --eval ssh id_rsa)
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
