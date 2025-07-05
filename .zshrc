@@ -1,15 +1,25 @@
+<<<<<<< Updated upstream
 source .bashrc
 
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
   tmux attach-session -t default || tmux new-session -s default
 fi
+=======
+﻿source .bashrc
+>>>>>>> Stashed changes
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+<<<<<<< Updated upstream
 export PATH=”$HOME/.npm-packages/bin:$PATH”
+=======
+export PATH="$PATH:$HOME/.local/bin"
+>>>>>>> Stashed changes
 eval $(keychain --eval ssh id_rsa)
+
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
